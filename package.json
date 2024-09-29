@@ -1,0 +1,24 @@
+{
+  "name": "document-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Neerajkumar",
+  "license": "ISC",
+  "description": "A simple tool to generate Documents from a template",
+  "devDependencies": {
+    "electron": "^32.0.2",
+    "electron-builder": "^25.0.5"
+  },
+  "dependencies": {
+    "docx": "^8.5.0",
+    "docx-pdf": "^0.0.1",
+    "docxtemplater": "^3.50.0",
+    "libreoffice-convert": "^1.6.0",
+    "pizzip": "^3.1.7"
+  }
+}

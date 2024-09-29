@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulk Document Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bulk Document Generator</h1>
+      <button id="selectTemplate">Select Template (.docx)</button>
+      <p id="selectedFile">No file selected</p>
+
+      <textarea
+        id="names"
+        rows="5"
+        placeholder="Enter names, one per line"
+      ></textarea>
+      <p id="nameCount">No names added</p>
+
+      <button id="generate">Generate Document</button>
+      <div id="loading" class="loading" style="display: none"></div>
+      <p id="status" class="status"></p>
+    </div>
+  </body>
+</html>

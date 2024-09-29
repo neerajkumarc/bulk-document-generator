@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+button:disabled {
+ cursor: not-allowed;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.loading {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #000;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  display: block;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#selectedFile {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#nameCount {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.success {
+  color: #4caf50;
+}
+
+.error {
+  color: #f44336;
+}
+
+/* #attribution {
+  font-size: 14px;
+  color: #666;
+  margin-top: 1rem;
+  text-align: center;
+} */
